@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fe33c6c5f28e38177c57c76a9c511413.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubePersuit</title>
+</head>
+<body>
+<img src="cube.png" alt="cube" class="png">
+    <br><br>
+    <ul>
+        <li type="none">
+            <a href="contacts.html"><button type="menu" class="button">contacts</button></a>
+            <a href="about.html"><button type="menu" class="button">about</button></a>
+            <a href="cube sets.html"><button type="menu" class="button">cube sets</button></a>
+            <a href="ani.html"><button type="menu" class="button">ani</button></a>
+        </li>
+    </ul>
+    <hr>
+    <br>
+    <center><h1>CubePersuit</h1></center>
+
+ <br>
+<p class="main_text">
+Empowering cubers of all levels with exclusive and proven Rubik's Cube algorithms to master and innovate their solving skills <br>
+</p>
+<p class="sub_text"></p> 
+  <div class="loader "></div>
+  <script>
+    window.addEventListener("load",()=>{
+        document.querySelector(".loader").classList.add("loader--hidden");
+
+        document.querySelector(".loader").addEventListener("transitionend",() =>{
+            document.body.removeChild(document.querySelector(".loader"));
+        });
+    });
+  </script>
+  <ul>
+    <li type="none">
+    <center>
+        <button type="btn"> learn to solve </button>
+    </center>
+    </li>
+</ul>
+  
+  
+</body>
+</html>

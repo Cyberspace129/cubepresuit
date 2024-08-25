@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cube_sets.css">
+    <link rel="shortcut icon" href="fe33c6c5f28e38177c57c76a9c511413.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubePersuit</title>
+</head>
+<body>
+  <center>
+<img src="cube.png" alt="cube" class="png">
+    <br><br>
+    <ul>
+        <li type="none">
+            <a href="index.html"><button type="menu" class="button">home</button></a>
+            <a href="contact.html"><button type="menu" class="button">contact</button></a>
+            <a href="about.html"><button type="menu" class="button">about</button></a>
+        </li>
+    </ul>
+    <hr>
+<div class="card_1">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>
+            <img src="cube.png" alt="cube state" width="200px">
+        </p>
+      </div>
+      <div class="card-back">
+        <p>solved</p>
+      </div>
+    </div>
+  </div>
+  <div class="card_2">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>
+            <img src="R_in.png" alt="cube state" width="200px">
+        </p>
+      </div>
+      <div class="card-back">
+        <ul type="none">
+          <li type="1">
+        F M' U M U' M' U2 M U2 F' R U' R'
+          </li>
+          <li type="1">
+        F' r U2 r' U r U' r' U R' F R2 U' R' 
+          </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card_3">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>
+            <img src="R_flip.png" alt="cube state" width="200px">
+        </p>
+      </div>
+      <div class="card-back">
+        <ul type="none">
+          <li type="1">
+        F M' U M U' M' U2 M U2 F' R U' R'
+          </li>
+          <li type="1">
+            F' r U2 r' U r U' r' U R' F R2 U' R' F R' F' R 
+              </li>
+              <li type="1">
+                F' R' U2 R2 U R2' U F2 R L' U' L R' F R U2 R' F R  
+                  </li>
+      </div>
+    </div>
+  </div>
+  <div class="card_4">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>
+            <img src="R_R_in.png" alt="cube state" width="200px">
+        </p>
+      </div>
+      <div class="card-back">
+        <li type="1">
+        U r U' r' F L U2 L2 U' L2 U' F' L' U r U r'
+      </li>
+      </div>
+    </div>
+  </div>
+  <div class="card_5">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>
+            <img src="R_F_in.png" alt="cube state" width="200px">
+        </p>
+      </div>
+      <div class="card-back">
+        <li type="1">
+          u' R' F R F' U' R U2 R' U R U' R' u R U2 R' 
+        </li>
+      </div>
+    </div>
+  </div>
+</center>
+      <div class="loader "></div>
+  <script>
+    window.addEventListener("load",()=>{
+        document.querySelector(".loader").classList.add("loader--hidden");
+
+        document.querySelector(".loader").addEventListener("transitionend",() =>{
+            document.body.removeChild(document.querySelector(".loader"));
+        });
+    });
+  </script>
+    
+</body>
+</html>

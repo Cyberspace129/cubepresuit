@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="fe33c6c5f28e38177c57c76a9c511413.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubePersuit</title>
+</head>
+<body>
+<img src="cube.png" alt="cube" class="png">
+    <br><br>
+    <ul>
+        <li type="none">
+            <a href="index.html"><button type="menu" class="button">home</button></a>
+            <a href="about.html"><button type="menu" class="button">about</button></a>
+            <a href="cube sets.html"><button type="menu" class="button">cube sets</button></a>
+        </li>
+    </ul>
+    <hr>
+    <div class="loader "></div>
+    <script>
+      window.addEventListener("load",()=>{
+          document.querySelector(".loader").classList.add("loader--hidden");
+  
+          document.querySelector(".loader").addEventListener("transitionend",() =>{
+              document.body.removeChild(document.querySelector(".loader"));
+          });
+      });
+    </script>
+<div class="container">
+    <h1>Contact Information</h1>
+    <div class="contact-columns">
+        <div class="contact-column">
+            <h2>Bayden Boesak</h2>
+            <p><strong>Email:</strong> <a href="mailto:warrenchristhp@gmail.com">warrenchristhp@gmail.com</a></p>
+
+            <p><strong>Description:</strong><br>
+                Bayden Boesak is the founder of CubePersuit and is part of the Information updating and solves critiques while operationing the CubePersuit youtube channel.
+            </div>
+        <div class="contact-column">
+            <h2>Riaan Subramoney</h2>
+            
+            <p><strong>Email:</strong> <a href="mailto:riaansubramoney1@gmail.com">riaansubramoney1@gmail.com</a></p>
+            <p><strong>Description:</strong><br>
+            Riaan Subramoney is a Co-founder of CubePersuit and will be doing solve critiques and uploading solves and general cubing activitys and operationt the CubePersuit channel.
+        </div>
+    </div>
+</div>
+    <!--<div class="container"></div> -->      
+ 
+    
+</body>
+</html>

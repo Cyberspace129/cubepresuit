@@ -1,0 +1,68 @@
+body{
+    height: 10in;
+    background-image: linear-gradient(90deg,rgb(0, 35, 95)50%,rgb(255, 123, 0)100%);
+}
+.png{
+    width: 100px;
+    height: 50px;
+    filter: contrast(3);
+}
+hr{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    color: #000;
+}
+.button{
+    float: right;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    width: 100px;
+    height: 40px;
+    color: white;
+}
+.loader{
+    position: fixed;
+    top :0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #000000;
+    transition: opacity 2s, visibility 3s;
+}
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content: "loading";
+    text-align: center ;
+    overflow-x: hidden;
+    font-size: 100px;
+    font-style: oblique;
+    font-weight: bolder;
+    width: 45%;
+    height:90%;
+    border: 1px solid #000000 ;
+    border-style:  double;
+    border-top-color: rgb(255, 255, 255);    
+    border-top-width: 50%;
+    border-left-color: rgb(0, 255, 162);
+    border-left-width: 100px;
+    border-bottom-width: 50%;
+    border-bottom-color: rgb(255, 255, 255);
+    border-right-width: 100px;
+    border-right-color: rgb(0, 208, 255);
+    border-radius: 100%;
+    animation:loading 2s ease-in-out infinite ;
+}
+@keyframes loading {
+    from{
+        transform: rotation(90deg);
+    }
+    to{
+        transform: rotate(360deg);
+        }
+}
